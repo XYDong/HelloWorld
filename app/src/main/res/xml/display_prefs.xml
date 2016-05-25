@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="light"
+        android:title="灯光强度"
+        android:summary="请选择灯光强度（测试ListPreference）"
+        android:dialogTitle="请选择灯光强度"
+        android:entries="@array/light_name_list"
+        android:entryValues="@array/light_values_list"
+        ></ListPreference>
+    <PreferenceCategory android:title="文字显示组">
+        <SwitchPreference
+            android:key="autoScroll"
+            android:title="自动滚动"
+            android:summaryOn="自动滚屏：开"
+            android:summaryOff="自动滚屏：关"
+            android:defaultValue="true"
+            ></SwitchPreference>
+    </PreferenceCategory>
+</PreferenceScreen>
